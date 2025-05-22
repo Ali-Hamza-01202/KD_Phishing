@@ -23,7 +23,7 @@ pkg install git php openssh curl wget -y
 pkg install cloudflared -y
 
 # 3. Clone KD Phishing repository
-git clone https://github.com/YOUR_USERNAME/KD-Phishing
+git clone https://github.com/Ali-Hamza-01202/KD-Phishing
 cd KD-Phishing
 
 # 4. Make the main script executable
