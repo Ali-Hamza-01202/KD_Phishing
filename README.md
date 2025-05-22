@@ -28,5 +28,5 @@ cd KD-Phishing
 
 # 4. Make the main script executable
 chmod +x kdphish.sh
-#5. To Launch
+# 3. To Launch
 ./kdphish.sh
