@@ -55,13 +55,16 @@ start_tunnel() {
             ;;
         2)
             echo -e "${CYAN}[*] Launching Cloudflared tunnel...${NC}"
-            cloudflared tunnel --url http://127.0.0.1:3333 > link.txt 2>/dev/null &
-            sleep 6
+            cloudflared tunnel --url http://127.0.0.1:3333 --logfile tunnel.log --loglevel info > link.txt 2>&1 &
+            sleep 8
+
             link=$(grep -o 'https://[-a-z0-9]*\.trycloudflare\.com' link.txt | head -n 1)
+
             if [ -n "$link" ]; then
                 echo -e "${GREEN}[+] Public Link:${NC} $link"
             else
                 echo -e "${RED}[!] Failed to generate Cloudflare link.${NC}"
+                cat link.txt | tail -n 10
             fi
             ;;
         *)
