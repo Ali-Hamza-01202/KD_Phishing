@@ -23,8 +23,8 @@ KD Phishing is a red-team focused phishing simulation tool for Facebook, Instagr
 pkg install cloudflared -y
 
 # 3. Clone KD Phishing repository
-git clone https://github.com/Ali-Hamza-01202/KD-Phishing
-cd KD-Phishing
+- git clone https://github.com/Ali-Hamza-01202/KD-Phishing
+- cd KD-Phishing
 
 # 4. Make the main script executable
 chmod +x kdphish.sh
