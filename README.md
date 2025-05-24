@@ -16,8 +16,8 @@ KD Phishing is a red-team focused phishing simulation tool for Facebook, Instagr
 - 📦 Works in Termux and Linux
 - 📄 Clean logs and customizable phishing pages
 - # 1. Update & install required packages
-pkg update && pkg upgrade
-pkg install git php openssh curl wget -y
+- pkg update && pkg upgrade
+- pkg install git php openssh curl wget -y
 
 # 2. Install Cloudflared (for public links)
 pkg install cloudflared -y
